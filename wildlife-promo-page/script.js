@@ -1,19 +1,15 @@
-const video=document.getElementById("wildlifeVideo");
-const button=document.getElementById("toggleBtn");
+const video = document.getElementById("wildlifeVideo");
+const button = document.getElementById("toggleBtn");
 
-button.addEventListener("click",()=>{
+button.addEventListener("click", function(){
 
-if(video.paused){
-
-video.style.display="block";
-video.play();
-
+if(video.style.display==="none"){
+    video.style.display="block";
+    video.play();
 }
 else{
-
-video.style.display="none";
-video.pause();
-
+    video.style.display="none";
+    video.pause();
 }
 
 });
